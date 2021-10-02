@@ -54,14 +54,14 @@ class Config:
     ADMIN = os.environ.get("ADMINS", '')
     SUDO = [int(admin) for admin in (ADMIN).split()] # Exclusive for heroku vars configuration.
     ADMINS = [int(admin) for admin in (ADMIN).split()] #group admins will be appended to this list.
-    API_ID = int(os.environ.get("API_ID", ''))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")     
-    SESSION = os.environ.get("SESSION_STRING", "")
-    BOT_USERNAME=None
+    API_ID = int(os.environ.get("API_ID", '4476771'))
+    API_HASH = os.environ.get("API_HASH", "f2498956859c009919a2e54204115e3b")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "2016907331:AAEtawJyxN8WlR3aK9P4wQjGn5zaMW9GiDs")     
+    SESSION = os.environ.get("SESSION_STRING", "BADEyeM_k-HRbMlI8mQlG_8J4iq1YuhEI6S4zzqCB5YxN-xjmg2kuWBY6V_iaP5AT2YeWhOKacOPG0N2DMmvc8MbifXltWD1UoRaI8v6e8mNbubo1VYOS3sER4gPL6Zc4AgMJcj13cnm2jBZwlLLt4nbkeH_TZcYFm-Hn1u6aE3JOZbJveXjHjYqwgqYWh2JFDCCX-kdRFreSjkdJSLrQhBANLxF-lezw4bUWOtlRBloLc7Y1uIpu8qcD-ZOhqHWAj5_Qp12OdEPW_LGAXmYA-wwDzQEH795MZBRMSdeGEmQ9G8eZ3GlASA4MPuZbMcllMY4Q2vxxAxSADHR7gA8m7fHcJjnCAA")
+    BOT_USERNAME=kingcinemabot
 
     #Stream Chat and Log Group
-    CHAT = int(os.environ.get("CHAT", ""))
+    CHAT = int(os.environ.get("CHAT", "-1001379202092"))
     LOG_GROUP=os.environ.get("LOG_GROUP", "")
     if LOG_GROUP:
         LOG_GROUP=int(LOG_GROUP)
